@@ -1,1 +1,333 @@
-Hello World
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>木惜瑾年 | iOS & Flutter 开发者</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f8f9fa;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header */
+        header {
+            background: #fff;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 0;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: #2563eb;
+            text-decoration: none;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #666;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #2563eb;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: #fff;
+            padding: 4rem 0;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .hero .subtitle {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        .hero .skills {
+            margin-top: 1.5rem;
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .skill-tag {
+            background: rgba(255,255,255,0.2);
+            padding: 0.4rem 1rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+        }
+
+        /* Main Content */
+        main {
+            padding: 3rem 0;
+        }
+
+        .section-title {
+            font-size: 1.8rem;
+            margin-bottom: 2rem;
+            color: #1a1a1a;
+        }
+
+        /* About Section */
+        .about {
+            background: #fff;
+            padding: 2rem;
+            border-radius: 12px;
+            margin-bottom: 3rem;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+
+        .about h2 {
+            margin-bottom: 1rem;
+            color: #2563eb;
+        }
+
+        /* Blog Posts */
+        .blog-grid {
+            display: grid;
+            gap: 2rem;
+        }
+
+        .blog-card {
+            background: #fff;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .blog-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+        }
+
+        .blog-card-content {
+            padding: 1.5rem;
+        }
+
+        .blog-meta {
+            font-size: 0.85rem;
+            color: #999;
+            margin-bottom: 0.5rem;
+        }
+
+        .blog-card h3 {
+            font-size: 1.3rem;
+            margin-bottom: 0.8rem;
+            color: #1a1a1a;
+        }
+
+        .blog-card p {
+            color: #666;
+            font-size: 0.95rem;
+            margin-bottom: 1rem;
+        }
+
+        .read-more {
+            color: #2563eb;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        .read-more:hover {
+            color: #1d4ed8;
+        }
+
+        /* Contact Section */
+        .contact {
+            background: #fff;
+            padding: 2rem;
+            border-radius: 12px;
+            margin-top: 3rem;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+
+        .contact h2 {
+            margin-bottom: 1rem;
+            color: #2563eb;
+        }
+
+        .contact-links {
+            display: flex;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+            margin-top: 1rem;
+        }
+
+        .contact-links a {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: #666;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .contact-links a:hover {
+            color: #2563eb;
+        }
+
+        /* Footer */
+        footer {
+            background: #1a1a1a;
+            color: #fff;
+            text-align: center;
+            padding: 2rem 0;
+            margin-top: 4rem;
+        }
+
+        footer p {
+            opacity: 0.7;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .nav-links {
+                gap: 1rem;
+            }
+
+            .section-title {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <a href="#" class="logo">木惜瑾年</a>
+                <ul class="nav-links">
+                    <li><a href="#about">关于</a></li>
+                    <li><a href="#blog">博客</a></li>
+                    <li><a href="#contact">联系</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>你好，我是木惜瑾年</h1>
+            <p class="subtitle">专注 iOS & Flutter 开发</p>
+            <div class="skills">
+                <span class="skill-tag">iOS</span>
+                <span class="skill-tag">Swift</span>
+                <span class="skill-tag">Flutter</span>
+                <span class="skill-tag">Dart</span>
+            </div>
+        </div>
+    </section>
+
+    <main class="container">
+        <section id="about" class="about">
+            <h2>关于我</h2>
+            <p>
+                热爱移动应用开发，专注于 iOS 和 Flutter 跨平台开发。
+                喜欢探索新技术，分享开发经验和最佳实践。
+                在这里记录我的学习历程和技术见解。
+            </p>
+        </section>
+
+        <section id="blog">
+            <h2 class="section-title">最新文章</h2>
+            <div class="blog-grid">
+                <article class="blog-card">
+                    <div class="blog-card-content">
+                        <div class="blog-meta">2024-01-15 · iOS开发</div>
+                        <h3>SwiftUI 状态管理最佳实践</h3>
+                        <p>探讨 SwiftUI 中的状态管理方案，包括 @State、@Binding、@ObservedObject 和 @StateObject 的使用场景...</p>
+                        <a href="#" class="read-more">阅读更多 →</a>
+                    </div>
+                </article>
+
+                <article class="blog-card">
+                    <div class="blog-card-content">
+                        <div class="blog-meta">2024-01-08 · Flutter</div>
+                        <h3>Flutter 性能优化实战指南</h3>
+                        <p>分享在实际项目中遇到的性能问题及解决方案，从渲染优化到内存管理的全方位指南...</p>
+                        <a href="#" class="read-more">阅读更多 →</a>
+                    </div>
+                </article>
+
+                <article class="blog-card">
+                    <div class="blog-card-content">
+                        <div class="blog-meta">2023-12-28 · 跨平台</div>
+                        <h3>从 iOS 到 Flutter：开发者的转型之路</h3>
+                        <p>记录我从原生 iOS 开发转向 Flutter 跨平台开发的学习历程和心得体会...</p>
+                        <a href="#" class="read-more">阅读更多 →</a>
+                    </div>
+                </article>
+
+                <article class="blog-card">
+                    <div class="blog-card-content">
+                        <div class="blog-meta">2023-12-15 · iOS开发</div>
+                        <h3>Combine 框架深入解析</h3>
+                        <p>深入了解 Apple 的 Combine 框架，学习如何使用响应式编程处理异步事件...</p>
+                        <a href="#" class="read-more">阅读更多 →</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <h2>联系我</h2>
+            <p>欢迎交流技术和合作机会</p>
+            <div class="contact-links">
+                <a href="mailto:2695070990@qq.com">📧 Email</a>
+                <a href="https://github.com/muxijinnian" target="_blank">🐙 GitHub</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 木惜瑾年. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
