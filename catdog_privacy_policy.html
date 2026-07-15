@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>隐私政策 - 猫狗 Catdog</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f5f5f5;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        @media (min-width: 768px) {
+            .container {
+                padding: 40px;
+            }
+        }
+
+        .language-switcher {
+            display: flex;
+            justify-content: flex-end;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        .lang-btn {
+            padding: 8px 16px;
+            background: #f0f0f0;
+            border: 2px solid #FF8A50;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            color: #FF8A50;
+        }
+
+        .lang-btn:hover {
+            background: #FF8A50;
+            color: #fff;
+        }
+
+        .lang-btn.active {
+            background: #FF8A50;
+            color: #fff;
+        }
+
+        .content-zh, .content-en {
+            display: none;
+        }
+
+        .content-zh.active, .content-en.active {
+            display: block;
+        }
+
+        header {
+            text-align: center;
+            padding: 30px 0;
+            border-bottom: 2px solid #FF8A50;
+            margin-bottom: 30px;
+        }
+
+        h1 {
+            font-size: 28px;
+            color: #FF8A50;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            font-size: 16px;
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        .update-date {
+            font-size: 14px;
+            color: #999;
+            background: #f0f0f0;
+            padding: 8px 16px;
+            border-radius: 4px;
+            display: inline-block;
+        }
+
+        .section {
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            font-size: 22px;
+            color: #FF8A50;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        h3 {
+            font-size: 18px;
+            color: #333;
+            margin: 20px 0 10px 0;
+        }
+
+        p {
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+
+        ul {
+            margin-bottom: 15px;
+            padding-left: 30px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        strong {
+            color: #FF8A50;
+            font-weight: 600;
+        }
+
+        a {
+            color: #FF8A50;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .contact-box {
+            background: #fff4ef;
+            border: 2px solid #FF8A50;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 20px 0;
+            text-align: center;
+        }
+
+        .contact-box h3 {
+            margin-top: 0;
+        }
+
+        .contact-box a {
+            display: inline-block;
+            margin: 10px 5px;
+            padding: 12px 24px;
+            background: #FF8A50;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: 500;
+        }
+
+        .contact-box a:hover {
+            background: #e6723a;
+        }
+
+        .highlight-box {
+            background: #FFF9E0;
+            border-left: 4px solid #FBC02D;
+            padding: 15px;
+            margin: 20px 0;
+        }
+
+        footer {
+            text-align: center;
+            padding-top: 30px;
+            border-top: 1px solid #e0e0e0;
+            color: #999;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Language Switcher -->
+        <div class="language-switcher">
+            <button class="lang-btn active" onclick="switchLanguage('zh')">简体中文</button>
+            <button class="lang-btn" onclick="switchLanguage('en')">English</button>
+        </div>
+
+        <!-- Chinese Content -->
+        <div class="content-zh active">
+            <header>
+                <h1>隐私政策</h1>
+                <p class="subtitle">猫狗 - Catdog 应用隐私政策</p>
+                <p class="update-date">最后更新日期：2026年7月15日</p>
+            </header>
+
+            <section class="section">
+                <h2>引言</h2>
+                <p><strong>猫狗</strong>（以下简称"我们"、"本应用"或"应用"，包名 com.muxijinnian.catdog）非常重视用户的隐私保护。本隐私政策详细说明了我们如何收集、使用、保护和分享您的信息。使用本应用即表示您同意本隐私政策的条款。</p>
+                <p>本应用是一款帮助用户播放猫咪和狗狗叫声、进行趣味互动以及管理宠物资料的 Android 工具类应用。我们致力于为用户提供安全、透明的服务体验。</p>
+            </section>
+
+            <section class="section">
+                <h2>1. 我们收集的信息</h2>
+
+                <h3>1.1 设备信息与广告数据</h3>
+                <p>本应用集成了 <strong>Google AdMob</strong> 广告服务用于维持应用的免费运营。为了展示广告，Google 可能会自动收集以下信息：</p>
+                <ul>
+                    <li><strong>设备标识符</strong>：如广告 ID（Google Advertising ID），用于广告投放与频次控制</li>
+                    <li><strong>设备与应用信息</strong>：设备型号、操作系统版本、应用包名与版本、语言设置、屏幕尺寸等</li>
+                    <li><strong>广告交互数据</strong>：广告展示、点击、关闭、观看完成情况等</li>
+                    <li><strong>大致地理位置</strong>：基于 IP 地址推断的国家/地区级别位置（不精确到个人）</li>
+                    <li><strong>使用数据</strong>：与应用交互相关的一般性信息，用于改进广告相关性</li>
+                </ul>
+                <p>上述信息由 Google 在其 SDK 运行过程中收集并传输，本应用不会自行拦截或存储这些数据。</p>
+
+                <h3>1.2 本地存储数据</h3>
+                <p>应用在<strong>您的设备本地</strong>（使用内置数据库）存储以下由您主动填写的数据：</p>
+                <ul>
+                    <li><strong>宠物资料</strong>：您添加的宠物昵称、生日、性别、宠物类型（猫/狗）、品种</li>
+                    <li><strong>应用设置</strong>：如功能使用次数等本地计数</li>
+                </ul>
+                <div class="highlight-box">
+                    <strong>重要说明</strong>：以上所有数据<strong>仅保存在您的设备本地</strong>，我们不会访问、上传或共享这些本地数据。卸载应用后，本地数据将被自动清除。
+                </div>
+
+                <h3>1.3 麦克风权限</h3>
+                <p>本应用在"人说话""猫说话"等语音互动功能中申请了<strong>麦克风权限（RECORD_AUDIO）</strong>，用于录制声音以驱动互动体验。请知悉：</p>
+                <ul>
+                    <li>录音内容仅用于<strong>本地功能处理</strong>（如语音互动效果），<strong>不会上传</strong>到任何服务器；</li>
+                    <li>我们<strong>不会长期保存</strong>您的录音，录音在完成本地处理后即被丢弃或覆盖；</li>
+                    <li>您可以随时在系统设置中撤销该权限，撤销后仅影响语音互动功能，其余功能正常使用。</li>
+                </ul>
+            </section>
+
+            <section class="section">
+                <h2>2. 信息使用方式</h2>
+                <p>我们及第三方服务收集和使用信息的目的包括：</p>
+                <ul>
+                    <li><strong>提供核心服务</strong>：保证叫声播放、宠物管理等功能的正常运行</li>
+                    <li><strong>广告投放</strong>：通过 AdMob 展示广告，维持应用免费运营</li>
+                    <li><strong>改进服务</strong>：修复缺陷、优化性能、提升用户体验</li>
+                    <li><strong>安全与合规</strong>：防止滥用、满足法律法规要求</li>
+                </ul>
+
+                <p><strong>我们不会出售、出租或交易您的个人信息</strong>。在以下情况下，信息可能被共享：</p>
+                <ul>
+                    <li><strong>服务提供商</strong>：与 Google 等广告服务提供商共享必要信息（详见第 3 节）</li>
+                    <li><strong>法律要求</strong>：在法律法规要求的情况下披露必要信息</li>
+                </ul>
+            </section>
+
+            <section class="section">
+                <h2>3. 广告政策（Google AdMob）</h2>
+                <p>本应用使用 <strong>Google AdMob</strong> 展示广告（包括开屏广告、横幅广告、激励视频广告等）。Google 可能使用 Cookie 或类似技术收集信息用于广告投放。</p>
+                <ul>
+                    <li><strong>个性化广告</strong>：可能基于您的兴趣和应用使用情况展示相关广告</li>
+                    <li><strong>广告标识符</strong>：使用广告 ID 进行广告追踪与频次控制</li>
+                </ul>
+                <p>您可以通过以下方式控制广告：</p>
+                <ul>
+                    <li>在 Android 系统设置中重置广告 ID 或开启"停用广告个性化"（限制广告跟踪）</li>
+                    <li>访问 <a href="https://adssettings.google.com/" target="_blank">Google 广告设置</a> 管理个性化广告</li>
+                </ul>
+                <p>关于 Google 如何使用广告信息的详细说明：</p>
+                <ul>
+                    <li><a href="https://policies.google.com/privacy" target="_blank">Google 隐私政策</a></li>
+                    <li><a href="https://support.google.com/admob/answer/6128543" target="_blank">AdMob 数据安全说明</a></li>
+                </ul>
+            </section>
+
+            <section class="section">
+                <h2>4. 数据安全</h2>
+                <p>我们采取合理措施保护您的信息：</p>
+                <ul>
+                    <li><strong>本地数据</strong>：宠物资料等仅存于设备本地，不上传服务器</li>
+                    <li><strong>加密传输</strong>：广告 SDK 的网络通信使用 HTTPS 加密</li>
+                    <li><strong>明文限制</strong>：应用已禁止明文（HTTP）网络流量</li>
+                </ul>
+                <p>但请注意，没有任何互联网传输或存储方式是 100% 安全的。</p>
+            </section>
+
+            <section class="section">
+                <h2>5. 您的权利</h2>
+                <p>您对自身数据享有以下权利：</p>
+                <ul>
+                    <li><strong>访问与更正</strong>：在应用内查看和修改您的宠物资料</li>
+                    <li><strong>删除权</strong>：可在应用内删除宠物记录，或卸载应用清除全部本地数据</li>
+                    <li><strong>权限控制</strong>：随时在系统设置中开启或撤销麦克风等权限</li>
+                    <li><strong>广告控制</strong>：通过系统广告设置限制个性化广告</li>
+                </ul>
+                <p>如需请求删除或对数据处理提出异议，请通过第 7 节的联系方式与我们联系。</p>
+            </section>
+
+            <section class="section">
+                <h2>6. 儿童隐私保护</h2>
+                <p>本应用适合所有年龄段的用户使用，主要面向宠物爱好者。我们<strong>不会故意收集 13 岁以下儿童的个人信息</strong>。由于应用不收集可识别个人身份的信息，并对面向儿童的合规要求予以遵守，如发现误收集儿童信息会立即删除。</p>
+                <p><strong>家长提示</strong>：您可以通过设备设置管理孩子的应用使用与权限。</p>
+            </section>
+
+            <section class="section">
+                <h2>7. 联系我们</h2>
+                <p>如果您对本隐私政策有任何疑问、意见，或需要行使隐私权利，请通过以下方式联系我们：</p>
+                <ul>
+                    <li><strong>应用内反馈</strong>：在"设置"页面点击"意见反馈"</li>
+                    <li><strong>电子邮件</strong>：2695070990@qq.com</li>
+                </ul>
+                <p>我们将在合理期限内回复您的请求。</p>
+            </section>
+
+            <section class="section">
+                <h2>8. 政策更新</h2>
+                <p>我们可能会不时更新本隐私政策。重大变更时，我们会通过应用内通知或更新本页面告知您。建议您定期查看本页面以了解最新内容。</p>
+                <p><strong>生效日期</strong>：本隐私政策自 2026 年 7 月 15 日起生效。</p>
+            </section>
+
+            <div class="contact-box">
+                <h3>需要帮助？</h3>
+                <p>如果您对本隐私政策有任何疑问，或需要行使您的隐私权利，请随时联系我们。</p>
+                <a href="mailto:2695070990@qq.com">发送邮件</a>
+            </div>
+
+            <footer>
+                <p>&copy; 2026 猫狗 Catdog. All rights reserved.</p>
+            </footer>
+        </div>
+
+        <!-- English Content -->
+        <div class="content-en">
+            <header>
+                <h1>Privacy Policy</h1>
+                <p class="subtitle">Catdog App Privacy Policy</p>
+                <p class="update-date">Last Updated: July 15, 2026</p>
+            </header>
+
+            <section class="section">
+                <h2>Introduction</h2>
+                <p><strong>Catdog</strong> (hereinafter "we", "this app", or "the app"; package name com.muxijinnian.catdog) attaches great importance to user privacy. This privacy policy explains in detail how we collect, use, protect, and share your information. By using this app, you agree to the terms of this privacy policy.</p>
+                <p>This app is an Android tool that lets users play cat and dog sounds, enjoy fun interactions, and manage pet profiles. We are committed to providing a safe and transparent service experience.</p>
+            </section>
+
+            <section class="section">
+                <h2>1. Information We Collect</h2>
+
+                <h3>1.1 Device &amp; Advertising Data</h3>
+                <p>This app integrates <strong>Google AdMob</strong> to keep the app free. To serve ads, Google may automatically collect the following information:</p>
+                <ul>
+                    <li><strong>Device identifiers</strong>: e.g. advertising ID (Google Advertising ID), for ad delivery and frequency control</li>
+                    <li><strong>Device &amp; app info</strong>: device model, OS version, app package name and version, language, screen size, etc.</li>
+                    <li><strong>Ad interaction data</strong>: impressions, clicks, dismissals, completion of ads</li>
+                    <li><strong>Approximate location</strong>: country/region-level location inferred from IP address (not precise to individuals)</li>
+                    <li><strong>Usage data</strong>: general interaction data to improve ad relevance</li>
+                </ul>
+                <p>This information is collected and transmitted by Google through its SDK; this app does not intercept or store it on its own.</p>
+
+                <h3>1.2 Locally Stored Data</h3>
+                <p>The app stores the following data, which you enter actively, <strong>locally on your device</strong> (using a built-in database):</p>
+                <ul>
+                    <li><strong>Pet profiles</strong>: nickname, birthday, sex, pet type (cat/dog), and breed of pets you add</li>
+                    <li><strong>App settings</strong>: local counters such as feature usage counts</li>
+                </ul>
+                <div class="highlight-box">
+                    <strong>Important</strong>: All the above data is stored <strong>only on your device</strong>. We do not access, upload, or share this local data. Uninstalling the app will automatically clear it.
+                </div>
+
+                <h3>1.3 Microphone Permission</h3>
+                <p>This app requests the <strong>microphone permission (RECORD_AUDIO)</strong> for voice-interaction features such as "human speak" and "cat speak" to record sound for the interaction. Please note:</p>
+                <ul>
+                    <li>Recordings are used only for <strong>local processing</strong> (e.g. voice-interaction effects) and are <strong>never uploaded</strong> to any server;</li>
+                    <li>We <strong>do not retain</strong> your recordings long-term; they are discarded or overwritten once local processing is complete;</li>
+                    <li>You may revoke this permission at any time in system settings. Revoking it only affects voice-interaction features; other features remain available.</li>
+                </ul>
+            </section>
+
+            <section class="section">
+                <h2>2. How We Use Information</h2>
+                <p>We and third-party services collect and use information for the following purposes:</p>
+                <ul>
+                    <li><strong>Provide core services</strong>: normal operation of sound playback, pet management, etc.</li>
+                    <li><strong>Ad delivery</strong>: display ads via AdMob to keep the app free</li>
+                    <li><strong>Improve services</strong>: fix defects, optimize performance, improve experience</li>
+                    <li><strong>Security &amp; compliance</strong>: prevent abuse and meet legal requirements</li>
+                </ul>
+
+                <p><strong>We do not sell, rent, or trade your personal information.</strong> Information may be shared in the following cases:</p>
+                <ul>
+                    <li><strong>Service providers</strong>: necessary information shared with ad providers such as Google (see Section 3)</li>
+                    <li><strong>Legal requirements</strong>: disclosure of necessary information when required by law</li>
+                </ul>
+            </section>
+
+            <section class="section">
+                <h2>3. Advertising Policy (Google AdMob)</h2>
+                <p>This app uses <strong>Google AdMob</strong> to display ads (including app-open ads, banner ads, rewarded video ads, etc.). Google may use cookies or similar technologies to collect information for ad delivery.</p>
+                <ul>
+                    <li><strong>Personalized ads</strong>: may show relevant ads based on your interests and app usage</li>
+                    <li><strong>Ad identifiers</strong>: uses the advertising ID for ad tracking and frequency control</li>
+                </ul>
+                <p>You can control ads via:</p>
+                <ul>
+                    <li>Resetting the ad ID or enabling "Opt out of Ads Personalization" in Android system settings (Limit Ad Tracking)</li>
+                    <li>Managing personalized ads at <a href="https://adssettings.google.com/" target="_blank">Google Ads Settings</a></li>
+                </ul>
+                <p>For details on how Google uses ad information:</p>
+                <ul>
+                    <li><a href="https://policies.google.com/privacy" target="_blank">Google Privacy Policy</a></li>
+                    <li><a href="https://support.google.com/admob/answer/6128543" target="_blank">AdMob Data Safety guidance</a></li>
+                </ul>
+            </section>
+
+            <section class="section">
+                <h2>4. Data Security</h2>
+                <p>We take reasonable measures to protect your information:</p>
+                <ul>
+                    <li><strong>Local data</strong>: pet profiles are stored only on the device and never uploaded to a server</li>
+                    <li><strong>Encrypted transmission</strong>: network communication of the ad SDK uses HTTPS</li>
+                    <li><strong>Cleartext restricted</strong>: the app blocks cleartext (HTTP) network traffic</li>
+                </ul>
+                <p>However, please note that no internet transmission or storage method is 100% secure.</p>
+            </section>
+
+            <section class="section">
+                <h2>5. Your Rights</h2>
+                <p>You have the following rights regarding your data:</p>
+                <ul>
+                    <li><strong>Access &amp; correction</strong>: view and edit your pet profiles in the app</li>
+                    <li><strong>Right to delete</strong>: delete pet records in the app, or uninstall the app to clear all local data</li>
+                    <li><strong>Permission control</strong>: grant or revoke permissions such as the microphone at any time in system settings</li>
+                    <li><strong>Ad control</strong>: limit personalized ads via system ad settings</li>
+                </ul>
+                <p>To request deletion or to object to data processing, please contact us as described in Section 7.</p>
+            </section>
+
+            <section class="section">
+                <h2>6. Children's Privacy</h2>
+                <p>This app is suitable for users of all ages and is mainly aimed at pet lovers. We <strong>do not knowingly collect personal information from children under 13</strong>. As the app does not collect personally identifiable information and complies with requirements for apps that may appeal to children, any inadvertently collected children's information will be deleted immediately.</p>
+                <p><strong>For parents</strong>: you can manage your child's app usage and permissions through device settings.</p>
+            </section>
+
+            <section class="section">
+                <h2>7. Contact Us</h2>
+                <p>If you have any questions or comments about this privacy policy, or need to exercise your privacy rights, please contact us via:</p>
+                <ul>
+                    <li><strong>In-app feedback</strong>: tap "Feedback" on the "Settings" page</li>
+                    <li><strong>Email</strong>: 2695070990@qq.com</li>
+                </ul>
+                <p>We will respond to your request within a reasonable period.</p>
+            </section>
+
+            <section class="section">
+                <h2>8. Policy Updates</h2>
+                <p>We may update this privacy policy from time to time. For significant changes, we will notify you through in-app notices or by updating this page. We recommend that you review this page regularly.</p>
+                <p><strong>Effective Date</strong>: This privacy policy is effective from July 15, 2026.</p>
+            </section>
+
+            <div class="contact-box">
+                <h3>Need Help?</h3>
+                <p>If you have any questions about this privacy policy or need to exercise your privacy rights, please feel free to contact us.</p>
+                <a href="mailto:2695070990@qq.com">Send Email</a>
+            </div>
+
+            <footer>
+                <p>&copy; 2026 Catdog. All rights reserved.</p>
+            </footer>
+        </div>
+    </div>
+
+    <script>
+        function switchLanguage(lang) {
+            const buttons = document.querySelectorAll('.lang-btn');
+            buttons.forEach(btn => btn.classList.remove('active'));
+
+            const zhContent = document.querySelector('.content-zh');
+            const enContent = document.querySelector('.content-en');
+
+            if (lang === 'zh') {
+                zhContent.classList.add('active');
+                enContent.classList.remove('active');
+                buttons[0].classList.add('active');
+                document.documentElement.lang = 'zh-CN';
+            } else {
+                enContent.classList.add('active');
+                zhContent.classList.remove('active');
+                buttons[1].classList.add('active');
+                document.documentElement.lang = 'en';
+            }
+        }
+    </script>
+</body>
+</html>
