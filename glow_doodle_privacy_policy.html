@@ -1,0 +1,482 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <meta name="description" content="Glow Doodle 隐私政策 / Glow Doodle Privacy Policy">
+  <title>隐私政策 - Glow Doodle</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #f5f7fb;
+      --surface: #ffffff;
+      --text: #1b1d24;
+      --muted: #626875;
+      --line: #e3e7ef;
+      --accent: #087f8c;
+      --accent-soft: #e8f7f8;
+      --warning: #805d00;
+      --warning-bg: #fff8dc;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+        "Noto Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif;
+      font-size: 16px;
+      line-height: 1.75;
+    }
+
+    main {
+      width: min(920px, calc(100% - 32px));
+      margin: 32px auto;
+      padding: 38px clamp(22px, 5vw, 56px);
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: 20px;
+    }
+
+    header {
+      padding-bottom: 24px;
+      border-bottom: 1px solid var(--line);
+    }
+
+    h1 {
+      margin: 0 0 8px;
+      font-size: clamp(28px, 5vw, 42px);
+      line-height: 1.2;
+    }
+
+    h2 {
+      margin-top: 38px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid var(--line);
+      font-size: 23px;
+      line-height: 1.35;
+    }
+
+    h3 {
+      margin: 26px 0 8px;
+      font-size: 18px;
+    }
+
+    p, ul { margin: 10px 0; }
+    ul { padding-left: 24px; }
+    li + li { margin-top: 6px; }
+
+    a {
+      color: var(--accent);
+      text-underline-offset: 3px;
+    }
+
+    .subtitle, .meta {
+      color: var(--muted);
+    }
+
+    .language-switch {
+      display: flex;
+      gap: 8px;
+      margin-top: 20px;
+    }
+
+    .language-switch button {
+      padding: 8px 16px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      background: transparent;
+      color: var(--text);
+      cursor: pointer;
+      font: inherit;
+    }
+
+    .language-switch button.active {
+      border-color: var(--accent);
+      background: var(--accent-soft);
+      color: var(--accent);
+      font-weight: 600;
+    }
+
+    .notice {
+      margin: 22px 0;
+      padding: 16px 18px;
+      border: 1px solid #eadca3;
+      border-radius: 12px;
+      background: var(--warning-bg);
+      color: var(--warning);
+    }
+
+    .summary {
+      margin-top: 22px;
+      padding: 18px;
+      border-radius: 14px;
+      background: var(--accent-soft);
+    }
+
+    .summary strong {
+      color: var(--accent);
+    }
+
+    .lang[hidden] { display: none; }
+
+    footer {
+      margin-top: 42px;
+      padding-top: 22px;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        color-scheme: dark;
+        --bg: #0d0e13;
+        --surface: #171920;
+        --text: #f2f4f8;
+        --muted: #a7adba;
+        --line: #30343e;
+        --accent: #63d9e6;
+        --accent-soft: #17363c;
+        --warning: #f1d47b;
+        --warning-bg: #322b17;
+      }
+    }
+
+    @media (max-width: 560px) {
+      main {
+        width: 100%;
+        margin: 0;
+        border: 0;
+        border-radius: 0;
+        padding: 28px 20px 40px;
+      }
+    }
+  </style>
+</head>
+<body>
+<main>
+  <header>
+    <h1>Glow Doodle</h1>
+    <div class="subtitle">隐私政策 / Privacy Policy</div>
+    <div class="meta">生效日期 / Effective date：2026-07-22</div>
+    <div class="language-switch" role="group" aria-label="Language">
+      <button id="btn-zh" class="active" type="button" onclick="setLanguage('zh')">简体中文</button>
+      <button id="btn-en" type="button" onclick="setLanguage('en')">English</button>
+    </div>
+  </header>
+
+  <article id="zh" class="lang" lang="zh-CN">
+    <div class="summary">
+      <strong>摘要：</strong>Glow Doodle 无需注册账号。您的画作、笔触、缩略图、视频和设置主要保存在设备本地；
+      只有在您主动操作时，图片或视频才会被保存至系统相册或分享给您选择的其他应用。
+      本应用使用 Google AdMob 展示广告，Google 可能按照其政策处理设备、广告标识符及广告互动信息。
+    </div>
+
+    <h2>引言</h2>
+    <p>
+      Glow Doodle（以下简称“本应用”或“我们”）重视您的隐私。本隐私政策说明本应用处理哪些信息、
+      如何使用和保护这些信息，以及您可以如何管理自己的数据。
+    </p>
+
+    <h2>1. 我们处理的信息</h2>
+
+    <h3>1.1 您创作和保存的内容</h3>
+    <p>为提供绘画、作品集和视频生成功能，本应用会在设备本地保存：</p>
+    <ul>
+      <li>绘画笔触数据、画布尺寸和作品标题；</li>
+      <li>作品缩略图、生成的视频文件及其本地路径；</li>
+      <li>自动保存和崩溃恢复所需的临时草稿；</li>
+      <li>您主动导出或分享时生成的临时图片文件。</li>
+    </ul>
+    <p>
+      分享用临时图片会存放在应用缓存目录中，本应用会清理较旧的临时分享文件。
+      当您删除作品时，本应用会删除对应的本地笔触、缩略图或视频文件。
+    </p>
+
+    <h3>1.2 应用设置和本地状态</h3>
+    <p>本应用会在本地保存以下信息：</p>
+    <ul>
+      <li>语言选择、自动保存选项、默认画笔、颜色和笔刷大小；</li>
+      <li>广告展示频率控制信息；</li>
+      <li>每日免费视频生成次数和激励广告奖励状态。</li>
+    </ul>
+
+    <h3>1.3 系统相册、分享和权限</h3>
+    <ul>
+      <li>
+        当您选择“保存到相册”时，本应用会将图片或视频写入设备的系统媒体库。
+        Android 10 及以上通过 MediaStore 完成；Android 9 及以下可能请求存储写入权限。
+      </li>
+      <li>
+        当您选择“分享图片”时，本应用会通过 Android 系统分享面板，将您选定的文件临时授权给您选择的应用。
+        本应用不会自动选择接收方，也不会在您未操作时分享作品。
+      </li>
+      <li>本应用不请求相机、麦克风、通讯录或精确位置权限。</li>
+    </ul>
+
+    <h3>1.4 Android 备份</h3>
+    <p>
+      如果您在设备上启用了 Android 云备份或设备迁移，Android 系统可能将本应用的部分本地数据
+      （包括设置和作品文件）备份至您的 Google 账号或传输到新设备。该过程由 Android 系统和您的账号设置控制，
+      并受 Google 相应隐私政策约束。您可以在设备系统设置中管理或关闭备份。
+    </p>
+
+    <h2>2. 第三方广告服务</h2>
+    <p>
+      本应用使用 Google AdMob（Google Mobile Ads SDK）展示横幅广告、原生广告、开屏广告和激励广告。
+      激励广告仅在您主动选择观看以获得应用内奖励时展示。
+    </p>
+    <p>根据您的地区、设备设置、同意状态和 Google 的政策，Google 可能处理：</p>
+    <ul>
+      <li>设备和应用信息，例如设备类型、操作系统、应用包名和版本；</li>
+      <li>广告标识符、IP 地址以及由其推断的大致位置；</li>
+      <li>广告请求、展示、点击、转化和诊断信息；</li>
+      <li>用于防止欺诈、衡量广告效果和提供个性化或非个性化广告的信息。</li>
+    </ul>
+    <p>
+      这些信息由 Google 依照其政策处理。详细信息请参阅
+      <a href="https://policies.google.com/privacy" rel="noopener noreferrer">Google 隐私权政策</a>、
+      <a href="https://policies.google.com/technologies/ads" rel="noopener noreferrer">Google 广告政策说明</a>。
+      您可以通过
+      <a href="https://myadcenter.google.com/" rel="noopener noreferrer">Google 我的广告中心</a>
+      以及设备的广告隐私设置管理广告偏好。
+    </p>
+
+    <h2>3. 我们如何使用信息</h2>
+    <ul>
+      <li>提供绘画、保存、恢复、作品集、导出、分享和视频播放功能；</li>
+      <li>保存您的应用偏好和广告频率状态；</li>
+      <li>展示广告以支持本应用的免费运营；</li>
+      <li>维护应用安全、诊断广告加载问题并防止滥用。</li>
+    </ul>
+    <p>本应用目前未集成独立的账号系统、Google Analytics 或第三方崩溃分析服务。</p>
+
+    <h2>4. 信息共享</h2>
+    <p>我们不会出售或出租您的个人信息。信息仅可能在以下情形被提供给第三方：</p>
+    <ul>
+      <li>为提供广告服务而由 Google AdMob 处理必要信息；</li>
+      <li>在您主动使用系统分享功能时，向您选择的应用提供对应文件；</li>
+      <li>法律法规、法院命令或有权机关依法要求时；</li>
+      <li>发生合并、收购或资产转让时，在遵守适用法律的前提下转移相关权益和义务。</li>
+    </ul>
+
+    <h2>5. 数据保存与删除</h2>
+    <ul>
+      <li>作品和设置通常保留至您在应用内删除、清除应用数据或卸载应用；</li>
+      <li>保存至系统相册的图片或视频不会在卸载应用时自动删除，您可在系统相册中自行管理；</li>
+      <li>系统云备份中的副本由您的 Android/Google 备份设置和保留规则管理；</li>
+      <li>Google 保存广告相关数据的期限由 Google 的政策决定。</li>
+    </ul>
+
+    <h2>6. 数据安全</h2>
+    <p>
+      我们采取合理措施限制本地文件访问，例如使用应用私有目录和 Android FileProvider 的临时读取授权。
+      但任何存储或传输方式都无法保证绝对安全，请妥善保护您的设备和账号。
+    </p>
+
+    <h2>7. 您的选择和权利</h2>
+    <ul>
+      <li>您可以在作品集中查看和删除作品；</li>
+      <li>您可以在系统设置中撤销存储权限、清除应用数据或卸载应用；</li>
+      <li>您可以管理 Android 云备份、广告标识符和 Google 广告个性化设置；</li>
+      <li>如需咨询或行使适用法律赋予的隐私权利，可通过下方邮箱联系我们。</li>
+    </ul>
+
+    <h2>8. 儿童隐私</h2>
+    <p>
+      本应用面向 13 岁及以上用户，不以 13 岁以下儿童为目标受众。我们不会故意要求儿童提交姓名、
+      邮箱或其他直接身份信息。如果您认为未满 13 岁儿童通过本应用向我们提供了个人信息，请联系我们处理。
+    </p>
+
+    <h2>9. 国际数据处理</h2>
+    <p>
+      Google 等第三方服务提供商可能在您所在国家或地区之外处理广告相关信息。
+      相关跨境处理由其依据适用法律和隐私政策实施。
+    </p>
+
+    <h2>10. 政策更新</h2>
+    <p>
+      我们可能因功能、法律或第三方服务变化而更新本政策。更新后的政策将在本页面公布，并修改生效日期。
+      如发生重大变化，我们会在合理可行的范围内提供额外通知。
+    </p>
+
+    <h2>11. 联系我们</h2>
+    <p>
+      如对本隐私政策有任何疑问，请发送邮件至：
+      <a href="mailto:2695070990@qq.com">2695070990@qq.com</a>
+    </p>
+  </article>
+
+  <article id="en" class="lang" lang="en" hidden>
+    <div class="summary">
+      <strong>Summary:</strong> Glow Doodle does not require an account. Your artwork, strokes, thumbnails,
+      videos, and preferences are primarily stored on your device. Images or videos are saved to the
+      system gallery or shared with another app only when you request it. The app uses Google AdMob,
+      which may process device, advertising identifier, and ad interaction information under Google's policies.
+    </div>
+
+    <h2>Introduction</h2>
+    <p>
+      Glow Doodle (“the App,” “we,” or “us”) respects your privacy. This Privacy Policy explains what
+      information the App processes, how it is used and protected, and the choices available to you.
+    </p>
+
+    <h2>1. Information We Process</h2>
+
+    <h3>1.1 Content You Create and Save</h3>
+    <p>To provide drawing, gallery, and video generation features, the App stores locally:</p>
+    <ul>
+      <li>Drawing strokes, canvas dimensions, and artwork titles;</li>
+      <li>Artwork thumbnails, generated video files, and their local paths;</li>
+      <li>Temporary drafts used for auto-save and crash recovery;</li>
+      <li>Temporary image files created when you request export or sharing.</li>
+    </ul>
+    <p>
+      Temporary share images are stored in the App's cache and older temporary files are cleaned up.
+      Deleting an artwork also deletes its associated local stroke, thumbnail, or video files.
+    </p>
+
+    <h3>1.2 Preferences and Local State</h3>
+    <p>The App locally stores:</p>
+    <ul>
+      <li>Language, auto-save preference, default brush, color, and brush size;</li>
+      <li>Ad display frequency controls;</li>
+      <li>Daily free video generation usage and rewarded-ad reward state.</li>
+    </ul>
+
+    <h3>1.3 Gallery, Sharing, and Permissions</h3>
+    <ul>
+      <li>
+        When you choose to save media, the App writes the selected image or video to the system media library.
+        Android 10 and later use MediaStore; Android 9 and earlier may request storage write permission.
+      </li>
+      <li>
+        When you share an image, Android's system share sheet temporarily grants the app you select access
+        to that file. Glow Doodle does not choose a recipient or share artwork without your action.
+      </li>
+      <li>The App does not request camera, microphone, contacts, or precise location permissions.</li>
+    </ul>
+
+    <h3>1.4 Android Backup</h3>
+    <p>
+      If Android cloud backup or device transfer is enabled, Android may back up some local App data,
+      including settings and artwork files, to your Google Account or transfer it to another device.
+      This is controlled by Android and your account settings and is governed by Google's applicable policies.
+      You can manage or disable backup in system settings.
+    </p>
+
+    <h2>2. Third-Party Advertising</h2>
+    <p>
+      The App uses Google AdMob (Google Mobile Ads SDK) to provide banner, native, app-open, and rewarded ads.
+      Rewarded ads are shown only after you choose to watch one in exchange for an in-app benefit.
+    </p>
+    <p>Depending on your region, device settings, consent status, and Google's policies, Google may process:</p>
+    <ul>
+      <li>Device and app information, such as device type, operating system, package name, and app version;</li>
+      <li>Advertising identifiers, IP address, and approximate location inferred from it;</li>
+      <li>Ad requests, impressions, clicks, conversions, and diagnostics;</li>
+      <li>Information used for fraud prevention, ad measurement, and personalized or non-personalized ads.</li>
+    </ul>
+    <p>
+      Google processes this information under its own policies. See the
+      <a href="https://policies.google.com/privacy" rel="noopener noreferrer">Google Privacy Policy</a> and
+      <a href="https://policies.google.com/technologies/ads" rel="noopener noreferrer">How Google uses information for advertising</a>.
+      You can manage ad preferences through
+      <a href="https://myadcenter.google.com/" rel="noopener noreferrer">My Ad Center</a>
+      and your device's advertising privacy settings.
+    </p>
+
+    <h2>3. How Information Is Used</h2>
+    <ul>
+      <li>To provide drawing, saving, recovery, gallery, export, sharing, and video playback;</li>
+      <li>To remember preferences and ad frequency state;</li>
+      <li>To display advertising that supports free operation of the App;</li>
+      <li>To maintain security, diagnose ad-loading issues, and prevent abuse.</li>
+    </ul>
+    <p>The App currently has no independent account system, Google Analytics, or third-party crash analytics SDK.</p>
+
+    <h2>4. Sharing of Information</h2>
+    <p>We do not sell or rent your personal information. Information may be provided to third parties only:</p>
+    <ul>
+      <li>When Google AdMob processes information necessary to provide advertising;</li>
+      <li>When you actively share a file with an app you select;</li>
+      <li>When required by applicable law, court order, or a lawful government request;</li>
+      <li>In a merger, acquisition, or asset transfer, subject to applicable law.</li>
+    </ul>
+
+    <h2>5. Retention and Deletion</h2>
+    <ul>
+      <li>Artwork and preferences remain until deleted in the App, App data is cleared, or the App is uninstalled;</li>
+      <li>Media saved to the system gallery is not automatically deleted when the App is uninstalled;</li>
+      <li>Copies in system cloud backup are governed by your Android/Google backup settings and retention rules;</li>
+      <li>Google determines retention periods for advertising data under its policies.</li>
+    </ul>
+
+    <h2>6. Security</h2>
+    <p>
+      We use reasonable safeguards such as app-private storage and temporary read permissions through Android
+      FileProvider. However, no method of storage or transmission can be guaranteed to be completely secure.
+      Please protect your device and accounts.
+    </p>
+
+    <h2>7. Your Choices and Rights</h2>
+    <ul>
+      <li>You can view and delete artwork in the gallery;</li>
+      <li>You can revoke storage permission, clear App data, or uninstall the App in system settings;</li>
+      <li>You can manage Android backup, advertising identifiers, and Google ad personalization;</li>
+      <li>You may contact us to ask questions or exercise rights available under applicable privacy law.</li>
+    </ul>
+
+    <h2>8. Children's Privacy</h2>
+    <p>
+      The App is intended for users aged 13 and older and is not directed to children under 13.
+      We do not knowingly ask children to submit names, email addresses, or other direct identifiers.
+      Contact us if you believe a child under 13 has provided personal information through the App.
+    </p>
+
+    <h2>9. International Processing</h2>
+    <p>
+      Third-party providers such as Google may process advertising-related information outside your country
+      or region under applicable law and their privacy policies.
+    </p>
+
+    <h2>10. Changes to This Policy</h2>
+    <p>
+      We may update this Policy when features, laws, or third-party services change. The updated version will
+      be posted on this page with a revised effective date. We will provide additional notice for material
+      changes where reasonably practicable.
+    </p>
+
+    <h2>11. Contact Us</h2>
+    <p>
+      Questions about this Privacy Policy may be sent to:
+      <a href="mailto:2695070990@qq.com">2695070990@qq.com</a>
+    </p>
+  </article>
+
+  <footer>
+    © 2026 Glow Doodle · Contact:
+    <a href="mailto:2695070990@qq.com">2695070990@qq.com</a>
+  </footer>
+</main>
+
+<script>
+  function setLanguage(language) {
+    const isChinese = language === "zh";
+    document.getElementById("zh").hidden = !isChinese;
+    document.getElementById("en").hidden = isChinese;
+    document.getElementById("btn-zh").classList.toggle("active", isChinese);
+    document.getElementById("btn-en").classList.toggle("active", !isChinese);
+    document.documentElement.lang = isChinese ? "zh-CN" : "en";
+    document.title = isChinese
+      ? "隐私政策 - Glow Doodle"
+      : "Privacy Policy - Glow Doodle";
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }
+</script>
+</body>
+</html>
